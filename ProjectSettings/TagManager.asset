@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Logic
+  - Mercy
+  - pillar
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - Mercy
+  - Water
+  - UI
+  - clouds
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Mercy
+    uniqueID: 2387177239
+    locked: 0
+  - name: Pillars
+    uniqueID: 3843090669
+    locked: 0
+  - name: clouds
+    uniqueID: 173901679
+    locked: 0
