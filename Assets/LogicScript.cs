@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -13,6 +14,7 @@ public class LogicScript : MonoBehaviour
     public bool gameOverIsActive = false;
     public GameObject mercy;
     string highScoreKey = "High Score";
+    public AudioSource buttonSFX;
 
     [ContextMenu("Increase Score")]
 
@@ -22,6 +24,7 @@ public class LogicScript : MonoBehaviour
     }
 
     public void restartGame() {
+        buttonSFX.Play();
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 

@@ -10,6 +10,8 @@ public class mercyScript : MonoBehaviour
     public float flapStrength = 11;
     public LogicScript logic;
     public bool isAlive = true;
+    public AudioSource collisionSFX;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -26,6 +28,10 @@ public class mercyScript : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        if (!logic.gameOverIsActive)
+        {
+            collisionSFX.Play();
+        }
         logic.gameOver();
         isAlive = false;
     }
