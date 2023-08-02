@@ -10709,7 +10709,7 @@ GameObject:
   - component: {fileID: 1421168239}
   - component: {fileID: 1421168238}
   m_Layer: 5
-  m_Name: Score
+  m_Name: High Score Title
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11003,10 +11003,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerScore: 0
   scoreText: {fileID: 1987612528}
+  highScoreText: {fileID: 819738545}
   gameOverScreen: {fileID: 561370158}
   gameOverIsActive: 0
   mercy: {fileID: 19344953}
-  highScoreText: {fileID: 819738545}
 --- !u!4 &1884350995
 Transform:
   m_ObjectHideFlags: 0
@@ -11034,7 +11034,7 @@ GameObject:
   - component: {fileID: 1987612529}
   - component: {fileID: 1987612528}
   m_Layer: 5
-  m_Name: '"High Score"'
+  m_Name: Score
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -8,10 +8,10 @@ public class LogicScript : MonoBehaviour
 {
     public int playerScore = 0;
     public Text scoreText;
+    public Text highScoreText;
     public GameObject gameOverScreen;
     public bool gameOverIsActive = false;
     public GameObject mercy;
-    public Text highScoreText;
     string highScoreKey = "High Score";
 
     [ContextMenu("Increase Score")]
