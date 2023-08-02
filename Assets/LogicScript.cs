@@ -28,6 +28,10 @@ public class LogicScript : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
+    public void quitGame() {
+        Application.Quit();
+    }
+
     public void gameOver() {
         if (this.playerScore > PlayerPrefs.GetInt(highScoreKey))
         {
@@ -42,5 +46,13 @@ public class LogicScript : MonoBehaviour
     {
         PlayerPrefs.GetInt(highScoreKey, 0);
         highScoreText.text = PlayerPrefs.GetInt(highScoreKey).ToString();
+    }
+
+    private void Update()
+    {
+        if (gameOverIsActive && Input.GetKeyDown(KeyCode.Space) == true)
+        {
+            restartGame();
+        }
     }
 }
