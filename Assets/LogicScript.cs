@@ -6,11 +6,13 @@ using UnityEngine.UI;
 
 public class LogicScript : MonoBehaviour
 {
-    public int playerScore;
+    public int playerScore = 0;
     public Text scoreText;
     public GameObject gameOverScreen;
     public bool gameOverIsActive = false;
     public GameObject mercy;
+    public Text highScoreText;
+    string highScoreKey = "High Score";
 
     [ContextMenu("Increase Score")]
 
@@ -24,7 +26,18 @@ public class LogicScript : MonoBehaviour
     }
 
     public void gameOver() {
+        if (this.playerScore > PlayerPrefs.GetInt(highScoreKey))
+        {
+            PlayerPrefs.SetInt(highScoreKey, this.playerScore);
+            highScoreText.text = PlayerPrefs.GetInt(highScoreKey).ToString();
+        }
         gameOverScreen.SetActive(true);
         gameOverIsActive = true;
+    }
+
+    private void Start()
+    {
+        PlayerPrefs.GetInt(highScoreKey, 0);
+        highScoreText.text = PlayerPrefs.GetInt(highScoreKey).ToString();
     }
 }
