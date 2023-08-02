@@ -4,11 +4,12 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-
 public class TitleScreenLogic : MonoBehaviour
 {
-   public void onClick()
+    public AudioSource buttonSFX;
+    public void onClick()
     {
+        buttonSFX.Play();
         SceneManager.LoadScene("Mercy Flappy Bird");
     }
 }
