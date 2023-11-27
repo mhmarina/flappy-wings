@@ -1,5 +1,5 @@
 # flappy-wings
-flappy bird clone using Unity 2D. Fully functional with a start screen, high score tracker using Playerprefs, soundFX and a particle system to simulate clouds in the background! :-)
+flappy bird clone using Unity 2D. Fully functional with a start screen, high score tracker using Playerprefs, soundFX and a particle system to simulate clouds in the background using custom assets! :-)
 
 ![Screenshot (162)](https://github.com/mhmarina/flappy-wings/assets/140115877/daaf9535-2dd6-487e-88fc-745715c3745f)
 ![Screenshot (164)](https://github.com/mhmarina/flappy-wings/assets/140115877/579ddf37-0c46-4f3d-b0c2-a91433f943df)
